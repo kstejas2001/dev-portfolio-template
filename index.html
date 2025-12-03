@@ -7,36 +7,64 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!--Adding a Navbar section-->
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Navbar section-->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Thejas<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-
+    
     <!--Adding a header section-->
-    <header> 
-        <h1>Hello, I'm Thejas K S</h1>
-        <p>Welcome to my Portfolio</p>
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <p class="hero-tagline">Frontend Learner • Web Developer</p>
+                <h1>Hello, I'm <span>Thejas K S</span></h1>
+                <p class="hero-subtitle">
+                    I build clean, simple and responsive web experiences using HTML, CSS, JavaScript and GitHub Pages.
+                </p>
+            
+                <div class="hero-tags">
+                    <span>Web Development</span>
+                    <span>Responsive Design</span>
+                    <span>Learning Everyday</span>
+                </div>
+            
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        
+            <div class="hero-image">
+                <div class="hero-photo"></div>
+            </div>
+        </div>
     </header>
 
+
+
+
     <!--Adding an about me section-->
-    <section id="about">
+    <section id="about" class="reveal">
         <h2>About Me</h2>
         <p>I'm Thejas K S, an aspiring developer passionate about building clean, functional, and user-friendly websites. I love learning new technologies and improving my skills every day.</p>
     </section>
 
     <!--Adding a skills section-->
-    <section id="skills">
+    <section id="skills" class="reveal">
         <h2>My Skills</h2>
         <ul class="skills-list">
             <li>HTML5</li>
             <li>CSS3</li>
             <li>JavaScript</li>
-            <li>Bootstarp</li>
+            <li>Bootstrap</li>
             <li>Django</li>
             <li>Python</li>
             <li>VS Code</li>
@@ -46,7 +74,7 @@
     </section>
 
     <!--Adding a projects section-->
-    <section id="projects">
+    <section id="projects" class="reveal">
         <h2>My Projects</h2>
 
         <div class="project">
@@ -58,11 +86,11 @@
     </section>
 
     <!--Adding a contact section-->
-    <section id="contact">
+    <section id="contact" class="reveal">
         <h2>Contact Me</h2>
         <p>If you'd like to work together or just say hi, drop me an email 👇</p>
         <a href="mailto:kstejas2001@gmail.com" class="email-button">kstejas2001@gmail.com</a>
       </section>
-      
+    <script src="js/script.js"></script>  
 </body>
 </html>
