@@ -36,7 +36,7 @@ dev-portfolio-template/
 
 ## 🌐 Live Demo
 
-> [🔗 View Portfolio](https://kstejas2001.github.io/dev-portfolio-template/)
+> [🔗 View Portfolio](https://kstejas2001.github.io/dev-portfolio-template/) *(Update once deployed)*
 
 ## 📬 Connect with Me
 
