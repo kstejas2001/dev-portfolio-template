@@ -1,3 +1,22 @@
+// Responsive Navbar Scrolling Behavior
+let lastScroll = 0;
+const nav = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll) {
+        // Scrolling down → hide
+        nav.style.transform = "translateY(-100%)";
+    } else {
+        // Scrolling up → show
+        nav.style.transform = "translateY(0)";
+    }
+
+    lastScroll = currentScroll;
+});
+
+// Animate the page
 document.addEventListener("DOMContentLoaded", () => {
   // Scroll reveal for sections
   const revealElements = document.querySelectorAll(".reveal");
