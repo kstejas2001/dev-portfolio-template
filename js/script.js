@@ -103,3 +103,84 @@ if (certContainer) {
     certContainer.appendChild(card);
   });
 }
+
+
+// ================= CODING PLATFORMS =================
+
+const codingPlatformsData = [
+  {
+    name: "LeetCode",
+    username: "kstejas2001",
+    status: "Active",
+    link: "https://leetcode.com/kstejas2001/",
+    bgColor: "rgba(255, 161, 22, 0.85)",
+    logo: "assets/images/platforms/leetcode.png"
+  },
+  {
+    name: "HackerRank",
+    username: "kstejas2001",
+    status: "Practicing",
+    link: "https://www.hackerrank.com/kstejas2001",
+    bgColor: "rgba(34, 197, 94, 0.85)",
+    logo: "assets/images/platforms/hackerrank.png"
+  },
+  {
+    name: "CodeChef",
+    username: "kstejas2001",
+    status: "Practicing",
+    link: "https://www.codechef.com/users/kstejas2001",
+    bgColor: "rgba(124, 58, 237, 0.85)",
+    logo: "assets/images/platforms/codechef.jpeg"
+  },
+  {
+    name: "Codeforces",
+    username: "Thejas_k_s",
+    status: "Learning",
+    link: "https://codeforces.com/profile/Thejas_k_s",
+    bgColor: "rgba(59, 130, 246, 0.85)",
+    logo: "assets/images/platforms/codeforces.png"
+  },
+  {
+    name: "Kaggle",
+    username: "thejasks",
+    status: "Active",
+    link: "https://www.kaggle.com/thejasks",
+    bgColor: "rgba(14, 165, 233, 0.85)",
+    logo: "assets/images/platforms/kaggle.png"
+  },
+  {
+    name: "HackerEarth",
+    username: "kstejas2001",
+    status: "Learning",
+    link: "https://www.hackerearth.com/@kstejas2001",
+    bgColor: "rgba(16, 185, 129, 0.85)",
+    logo: "assets/images/platforms/hackerearth.png"
+  }
+];
+
+const platformContainer = document.getElementById("coding-platforms");
+
+if (platformContainer) {
+  codingPlatformsData.forEach(p => {
+    const card = document.createElement("a");
+    card.className = "platform-card";
+    card.href = p.link;
+    card.target = "_blank";
+    card.rel = "noopener";
+
+    card.innerHTML = `
+      <div class="platform-logo" style="background:${p.bgColor}">
+        <img src="${p.logo}" alt="${p.name}">
+      </div>
+      <div class="platform-info">
+        <div class="platform-head">
+          <h3>${p.name}</h3>
+          <span class="status ${p.status.toLowerCase()}">${p.status}</span>
+        </div>
+        <p class="platform-user">@${p.username}</p>
+      </div>
+    `;
+
+    platformContainer.appendChild(card);
+  });
+}
