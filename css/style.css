@@ -86,7 +86,6 @@ header p{
     width: 100%;
 }
 /* Mobile friendly navbar */
-/* Navbar mobile fix */
 @media (max-width: 700px) {
     .navbar {
         padding: 10px 16px;
@@ -486,7 +485,6 @@ header p{
 
 
 /* Contact Section */
-/* Contact Section */
 #contact {
     background: #020617;
 }
@@ -562,6 +560,63 @@ header p{
 .contact-card p {
     margin: 0;
 }
+
+
+/* ================= EDUCATION PAGE ================= */
+.edu-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(34, 197, 94, 0.15),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(15, 23, 42, 0.95),
+      rgba(2, 6, 23, 1)
+    );
+}
+
+.edu-hero-inner {
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.edu-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #e5e7eb;
+}
+
+.edu-hero p {
+  font-size: 1.05rem;
+  color: #9ca3af;
+  margin-bottom: 26px;
+  line-height: 1.6;
+}
+
+/* Accent line */
+.edu-accent-line {
+  width: 120px;
+  height: 4px;
+  margin: 0 auto;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    90deg,
+    #22c55e,
+    #3b82f6,
+    #a855f7
+  );
+}
+
 /* Degrees Section */
 .degree-card {
     display: flex;
